@@ -1,0 +1,785 @@
+2025-03-26 01:57:07,428 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 01:57:09,435 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 01:57:09,436 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 01:57:10,497 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 01:57:12,503 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 01:57:12,503 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 01:57:18,084 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 01:57:20,089 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 01:57:20,090 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 01:57:20,096 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 01:57:28,517 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 94
+2025-03-26 01:57:28,518 - DEBUG - 响应头: {'date': 'Tue, 25 Mar 2025 17:57:21 GMT', 'server': 'uvicorn', 'content-length': '94', 'content-type': 'application/json'}
+2025-03-26 02:09:35,910 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:09:37,918 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:09:37,918 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:09:42,718 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:09:44,724 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:09:44,729 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:09:44,734 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:09:46,750 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 02:09:46,753 - DEBUG - 响应头: {'date': 'Tue, 25 Mar 2025 18:09:45 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 02:09:50,844 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 02:09:50,866 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f60\u597d"}
+2025-03-26 02:09:51,269 - DEBUG - 原始响应行: {"type": "content", "data": "\uff01"}
+2025-03-26 02:09:51,347 - DEBUG - 原始响应行: {"type": "content", "data": "\u5f88\u9ad8\u5174"}
+2025-03-26 02:09:51,404 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e3a\u4f60"}
+2025-03-26 02:09:51,482 - DEBUG - 原始响应行: {"type": "content", "data": "\u670d\u52a1"}
+2025-03-26 02:09:51,504 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 02:09:51,525 - DEBUG - 原始响应行: {"type": "content", "data": "\u8bf7\u95ee"}
+2025-03-26 02:09:51,546 - DEBUG - 原始响应行: {"type": "content", "data": "\u6709\u4ec0\u4e48"}
+2025-03-26 02:09:51,583 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef\u4ee5"}
+2025-03-26 02:09:51,644 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e2e"}
+2025-03-26 02:09:51,665 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f60\u7684"}
+2025-03-26 02:09:51,706 - DEBUG - 原始响应行: {"type": "content", "data": "\u5417"}
+2025-03-26 02:09:51,737 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1f"}
+2025-03-26 02:09:51,770 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 02:09:51,800 - DEBUG - 原始响应行: {"type": "sources", "data": []}
+2025-03-26 02:10:10,926 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:10:14,935 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 500 21
+2025-03-26 02:10:15,054 - DEBUG - 上传响应: 500 Internal Server Error
+2025-03-26 02:10:15,057 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:10:17,061 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:10:17,062 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:26:30,043 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:32,050 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:26:32,051 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:26:35,274 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:37,277 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:26:37,277 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:26:37,281 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:39,290 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 02:26:39,291 - DEBUG - 响应头: {'date': 'Tue, 25 Mar 2025 18:26:38 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 02:26:42,499 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 02:26:42,521 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f60\u597d"}
+2025-03-26 02:26:42,843 - DEBUG - 原始响应行: {"type": "content", "data": "\uff01"}
+2025-03-26 02:26:42,901 - DEBUG - 原始响应行: {"type": "content", "data": "\u5f88\u9ad8\u5174"}
+2025-03-26 02:26:42,962 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e3a\u4f60"}
+2025-03-26 02:26:43,024 - DEBUG - 原始响应行: {"type": "content", "data": "\u670d\u52a1"}
+2025-03-26 02:26:43,045 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 02:26:43,083 - DEBUG - 原始响应行: {"type": "content", "data": "\u8bf7\u95ee"}
+2025-03-26 02:26:43,104 - DEBUG - 原始响应行: {"type": "content", "data": "\u6709\u4ec0\u4e48"}
+2025-03-26 02:26:43,144 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef\u4ee5"}
+2025-03-26 02:26:43,220 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e2e"}
+2025-03-26 02:26:43,241 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f60\u7684"}
+2025-03-26 02:26:43,266 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1f"}
+2025-03-26 02:26:43,327 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 02:26:43,349 - DEBUG - 原始响应行: {"type": "sources", "data": []}
+2025-03-26 02:26:47,049 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:49,056 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 404 22
+2025-03-26 02:26:49,057 - DEBUG - 上传响应: 404 {"detail":"Not Found"}
+2025-03-26 02:26:49,060 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:51,063 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:26:51,063 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:26:52,857 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:54,873 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 404 22
+2025-03-26 02:26:54,873 - DEBUG - 上传响应: 404 {"detail":"Not Found"}
+2025-03-26 02:26:54,875 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:26:56,878 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:26:56,878 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:26:58,773 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:27:00,788 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:27:00,789 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:27:03,874 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:27:05,880 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 404 22
+2025-03-26 02:27:05,881 - DEBUG - 上传响应: 404 {"detail":"Not Found"}
+2025-03-26 02:27:05,883 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:27:07,888 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:27:07,889 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:29:26,107 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:29:28,112 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:29:28,112 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:29:31,252 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:29:33,268 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 02:29:33,268 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 02:29:33,270 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:29:35,274 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:29:35,274 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:32:15,636 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:32:17,642 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:32:17,642 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:34:16,531 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:34:18,535 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:34:18,535 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:34:23,071 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:34:25,076 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 02:34:25,076 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 02:34:25,079 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 02:34:27,103 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 02:34:27,104 - DEBUG - 响应头: {'date': 'Tue, 25 Mar 2025 18:34:26 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 02:34:30,762 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 02:34:30,784 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f60\u597d"}
+2025-03-26 02:34:31,146 - DEBUG - 原始响应行: {"type": "content", "data": "\uff01"}
+2025-03-26 02:34:31,204 - DEBUG - 原始响应行: {"type": "content", "data": "\u6709\u4ec0\u4e48"}
+2025-03-26 02:34:31,226 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef\u4ee5"}
+2025-03-26 02:34:31,263 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e2e"}
+2025-03-26 02:34:31,284 - DEBUG - 原始响应行: {"type": "content", "data": "\u60a8\u7684"}
+2025-03-26 02:34:31,322 - DEBUG - 原始响应行: {"type": "content", "data": "\u5417"}
+2025-03-26 02:34:31,343 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1f"}
+2025-03-26 02:34:31,390 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 02:34:31,411 - DEBUG - 原始响应行: {"type": "sources", "data": []}
+2025-03-26 16:15:54,046 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:15:56,074 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:15:56,075 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:16:03,602 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:16:05,610 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 16:16:05,612 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 16:16:05,617 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:16:07,623 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:16:07,623 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:17:07,917 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:17:09,922 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:17:09,923 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:17:10,953 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:17:12,970 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 16:17:12,971 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 16:17:12,974 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:17:14,980 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:17:14,981 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:17:38,107 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:17:40,133 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 16:17:40,134 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 16:17:40,137 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:17:42,143 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:17:42,144 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:35:05,514 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:35:07,519 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:35:07,520 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:35:10,208 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:35:12,215 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 16:35:12,216 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 16:35:12,218 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:35:14,233 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:35:14,235 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:43:16,278 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:43:18,133 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:43:18,286 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:43:18,287 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:43:20,137 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:43:20,138 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:43:22,257 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:43:54,276 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:56:48,773 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:56:50,780 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:56:50,781 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:56:54,567 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:56:56,577 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 16:56:56,577 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 16:56:56,579 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:56:58,604 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:56:58,604 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:57:04,533 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:57:06,541 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:57:06,541 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:57:09,668 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:57:11,696 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 400 64
+2025-03-26 16:57:11,696 - DEBUG - 上传响应: 400 {"status":"error","message":"所有文件均无可提取内容"}
+2025-03-26 16:57:11,699 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:57:13,713 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:57:13,714 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:58:17,368 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:58:19,376 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 16:58:19,376 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 16:58:22,203 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 16:58:54,221 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:04:02,323 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:04:13,700 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:04:15,705 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:04:15,705 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:04:18,268 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:04:20,273 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:04:20,274 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:06:05,763 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:07,778 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:06:07,778 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:06:10,473 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:20,846 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:20,846 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:20,870 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:26,487 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:26,488 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:26,503 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:31,829 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:31,829 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:31,843 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:37,539 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:37,540 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:37,573 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:43,183 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:43,183 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:43,196 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:48,474 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:48,475 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:48,489 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:53,693 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:53,693 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:53,707 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:06:59,341 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:06:59,342 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:06:59,360 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:05,359 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:05,360 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:05,373 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:10,587 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:10,588 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:10,600 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:16,180 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:16,180 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:16,196 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:21,415 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:21,418 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:21,433 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:26,825 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:26,825 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:26,839 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:32,026 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:32,026 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:32,040 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:37,413 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:37,413 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:37,427 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:43,081 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:43,081 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:43,096 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:43,714 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:07:48,532 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:07:48,533 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:07:48,533 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:07:48,545 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:14:11,689 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:14:13,706 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:14:13,706 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:14:16,838 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:14:22,345 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 68
+2025-03-26 17:14:22,346 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":-2669570552089766502}
+2025-03-26 17:14:22,348 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:14:24,372 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:14:24,373 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:15:55,108 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:15:57,126 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:15:57,126 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:16:04,857 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:16:06,864 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:16:06,865 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:16:09,328 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:16:17,428 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:16:17,428 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:16:17,430 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:16:19,528 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:16:19,529 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:16:33,753 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:16:39,285 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:16:39,285 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:16:39,287 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:16:41,312 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:16:41,312 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:16:41,316 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:16:43,332 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 17:16:43,332 - DEBUG - 响应头: {'date': 'Wed, 26 Mar 2025 09:16:42 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 17:16:43,333 - DEBUG - 原始响应行: {"type": "error", "data": "\u77e5\u8bc6\u5e93\u672a\u5c31\u7eea\uff0c\u8bf7\u5148\u4e0a\u4f20\u6587\u6863"}
+2025-03-26 17:30:13,698 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:30:19,086 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:30:19,087 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:30:19,089 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:30:21,095 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:30:21,095 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:30:39,180 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:30:44,557 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:30:44,557 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:30:44,559 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:30:46,563 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:30:46,563 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:32:18,588 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:32:20,596 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:32:20,597 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:32:23,147 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:32:28,753 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:32:28,754 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:32:28,758 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:32:30,773 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:32:30,774 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:32:32,015 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:32:37,433 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:32:37,434 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:32:37,435 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:32:39,441 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:32:39,441 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:33:55,615 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:34:00,952 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:34:00,953 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:34:00,955 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:34:02,970 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:34:02,971 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:38:36,559 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:38:38,565 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:38:38,565 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:38:42,869 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:38:48,260 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:38:48,262 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:38:48,266 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:38:50,281 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:38:50,281 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:38:51,513 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:38:53,527 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:38:53,527 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:38:54,740 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:38:56,744 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:38:56,744 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:40:35,641 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:40:37,665 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:40:37,665 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:40:40,358 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:40:46,008 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 67
+2025-03-26 17:40:46,009 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":1587263709641847398}
+2025-03-26 17:40:46,011 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:40:48,024 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:40:48,025 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 17:53:28,421 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 17:53:30,424 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 17:53:30,425 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 18:00:54,258 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:00:56,262 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 18:00:56,262 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 18:00:59,218 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:01:08,351 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 114
+2025-03-26 18:01:08,352 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":"4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006"}
+2025-03-26 18:01:08,354 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:01:10,359 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:01:10,359 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:01:27,327 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:01:29,331 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:01:29,331 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:01:29,336 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:01:31,366 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 18:01:31,366 - DEBUG - 响应头: {'date': 'Wed, 26 Mar 2025 10:01:31 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 18:01:35,466 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:01:35,487 - DEBUG - 原始响应行: {"type": "content", "data": "\u6839\u636e"}
+2025-03-26 18:01:36,185 - DEBUG - 原始响应行: {"type": "content", "data": "\u63d0\u4f9b"}
+2025-03-26 18:01:36,272 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u4fe1\u606f"}
+2025-03-26 18:01:36,294 - DEBUG - 原始响应行: {"type": "content", "data": "\u7247\u6bb5"}
+2025-03-26 18:01:36,349 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:36,370 - DEBUG - 原始响应行: {"type": "content", "data": "\u4ee5\u4e0b\u662f"}
+2025-03-26 18:01:36,432 - DEBUG - 原始响应行: {"type": "content", "data": "\u5173\u4e8e"}
+2025-03-26 18:01:36,514 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:36,598 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-03-26 18:01:36,620 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-03-26 18:01:36,679 - DEBUG - 原始响应行: {"type": "content", "data": "\u751f\u7269"}
+2025-03-26 18:01:36,701 - DEBUG - 原始响应行: {"type": "content", "data": "\u63a7"}
+2025-03-26 18:01:36,763 - DEBUG - 原始响应行: {"type": "content", "data": "\u8349"}
+2025-03-26 18:01:36,785 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:36,977 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u76f8\u5173"}
+2025-03-26 18:01:36,998 - DEBUG - 原始响应行: {"type": "content", "data": "\u4fe1\u606f"}
+2025-03-26 18:01:37,020 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1a\n\n"}
+2025-03-26 18:01:37,041 - DEBUG - 原始响应行: {"type": "content", "data": "1"}
+2025-03-26 18:01:37,062 - DEBUG - 原始响应行: {"type": "content", "data": "."}
+2025-03-26 18:01:37,084 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:37,105 - DEBUG - 原始响应行: {"type": "content", "data": "\u4ea7\u54c1"}
+2025-03-26 18:01:37,126 - DEBUG - 原始响应行: {"type": "content", "data": "\u7279\u6027"}
+2025-03-26 18:01:37,173 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:37,259 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:37,281 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:37,308 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:37,386 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:37,408 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e02\u9762\u4e0a"}
+2025-03-26 18:01:37,428 - DEBUG - 原始响应行: {"type": "content", "data": "\u7b2c\u4e00\u6b3e"}
+2025-03-26 18:01:37,450 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:37,503 - DEBUG - 原始响应行: {"type": "content", "data": "\u7eaf"}
+2025-03-26 18:01:37,525 - DEBUG - 原始响应行: {"type": "content", "data": "\u751f\u7269"}
+2025-03-26 18:01:37,585 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:37,607 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-03-26 18:01:37,669 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:37,691 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:37,754 - DEBUG - 原始响应行: {"type": "content", "data": "\u5177\u6709"}
+2025-03-26 18:01:37,775 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:37,833 - DEBUG - 原始响应行: {"type": "content", "data": "0"}
+2025-03-26 18:01:37,854 - DEBUG - 原始响应行: {"type": "content", "data": "\u519c"}
+2025-03-26 18:01:37,919 - DEBUG - 原始响应行: {"type": "content", "data": "\u6b8b"}
+2025-03-26 18:01:37,941 - DEBUG - 原始响应行: {"type": "content", "data": "\u3001"}
+2025-03-26 18:01:38,000 - DEBUG - 原始响应行: {"type": "content", "data": "\u65e0"}
+2025-03-26 18:01:38,022 - DEBUG - 原始响应行: {"type": "content", "data": "\u6fc0\u7d20"}
+2025-03-26 18:01:38,081 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:38,103 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u7279\u70b9"}
+2025-03-26 18:01:38,164 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:38,263 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:38,286 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:38,307 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:38,351 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:38,373 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e7f"}
+2025-03-26 18:01:38,433 - DEBUG - 原始响应行: {"type": "content", "data": "\u8c31"}
+2025-03-26 18:01:38,456 - DEBUG - 原始响应行: {"type": "content", "data": "\u6027"}
+2025-03-26 18:01:38,516 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:38,537 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:38,596 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:38,618 - DEBUG - 原始响应行: {"type": "content", "data": "\u80fd"}
+2025-03-26 18:01:38,679 - DEBUG - 原始响应行: {"type": "content", "data": "\u5feb\u901f"}
+2025-03-26 18:01:38,701 - DEBUG - 原始响应行: {"type": "content", "data": "\u6709\u6548"}
+2025-03-26 18:01:38,761 - DEBUG - 原始响应行: {"type": "content", "data": "\u53bb\u9664"}
+2025-03-26 18:01:38,784 - DEBUG - 原始响应行: {"type": "content", "data": "\u6742\u8349"}
+2025-03-26 18:01:38,844 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:38,928 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-03-26 18:01:38,949 - DEBUG - 原始响应行: {"type": "content", "data": "2"}
+2025-03-26 18:01:38,970 - DEBUG - 原始响应行: {"type": "content", "data": "."}
+2025-03-26 18:01:39,009 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:39,030 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f5c\u7528"}
+2025-03-26 18:01:39,091 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548\u679c"}
+2025-03-26 18:01:39,180 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:39,256 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:39,279 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:39,300 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:39,338 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:39,360 - DEBUG - 原始响应行: {"type": "content", "data": "\u89c1\u6548"}
+2025-03-26 18:01:39,423 - DEBUG - 原始响应行: {"type": "content", "data": "\u901f\u5ea6\u5feb"}
+2025-03-26 18:01:39,445 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:39,504 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1a"}
+2025-03-26 18:01:39,526 - DEBUG - 原始响应行: {"type": "content", "data": "8"}
+2025-03-26 18:01:39,590 - DEBUG - 原始响应行: {"type": "content", "data": "\u5929"}
+2025-03-26 18:01:39,611 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef\u89c1"}
+2025-03-26 18:01:39,675 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548\u679c"}
+2025-03-26 18:01:39,696 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:39,757 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:39,835 - DEBUG - 原始响应行: {"type": "content", "data": "13"}
+2025-03-26 18:01:39,857 - DEBUG - 原始响应行: {"type": "content", "data": "\u5929\u540e"}
+2025-03-26 18:01:39,918 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548\u679c"}
+2025-03-26 18:01:39,940 - DEBUG - 原始响应行: {"type": "content", "data": "\u6700\u4f18"}
+2025-03-26 18:01:39,999 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:40,022 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:40,082 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:40,103 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:40,166 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:40,188 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:40,246 - DEBUG - 原始响应行: {"type": "content", "data": "\u6301"}
+2025-03-26 18:01:40,268 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548"}
+2025-03-26 18:01:40,334 - DEBUG - 原始响应行: {"type": "content", "data": "\u671f"}
+2025-03-26 18:01:40,355 - DEBUG - 原始响应行: {"type": "content", "data": "\u957f"}
+2025-03-26 18:01:40,414 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:40,435 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1a"}
+2025-03-26 18:01:40,492 - DEBUG - 原始响应行: {"type": "content", "data": "\u7ea6"}
+2025-03-26 18:01:40,575 - DEBUG - 原始响应行: {"type": "content", "data": "35"}
+2025-03-26 18:01:40,596 - DEBUG - 原始响应行: {"type": "content", "data": "\u5929"}
+2025-03-26 18:01:40,658 - DEBUG - 原始响应行: {"type": "content", "data": "\u5de6\u53f3"}
+2025-03-26 18:01:40,679 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:40,742 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-03-26 18:01:40,763 - DEBUG - 原始响应行: {"type": "content", "data": "3"}
+2025-03-26 18:01:40,824 - DEBUG - 原始响应行: {"type": "content", "data": "."}
+2025-03-26 18:01:40,846 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:40,909 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:40,931 - DEBUG - 原始响应行: {"type": "content", "data": "\u6539\u826f"}
+2025-03-26 18:01:40,997 - DEBUG - 原始响应行: {"type": "content", "data": "\u529f\u80fd"}
+2025-03-26 18:01:41,080 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:41,151 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:41,173 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:41,194 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:41,235 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:41,257 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef"}
+2025-03-26 18:01:41,321 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:41,400 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e73\u8861"}
+2025-03-26 18:01:41,421 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:41,480 - DEBUG - 原始响应行: {"type": "content", "data": "pH"}
+2025-03-26 18:01:41,502 - DEBUG - 原始响应行: {"type": "content", "data": "\u503c"}
+2025-03-26 18:01:41,565 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:41,587 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:41,644 - DEBUG - 原始响应行: {"type": "content", "data": "\u964d\u4f4e"}
+2025-03-26 18:01:41,665 - DEBUG - 原始响应行: {"type": "content", "data": "\u73b0\u6709"}
+2025-03-26 18:01:41,728 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:41,749 - DEBUG - 原始响应行: {"type": "content", "data": "\u519c"}
+2025-03-26 18:01:41,815 - DEBUG - 原始响应行: {"type": "content", "data": "\u6b8b"}
+2025-03-26 18:01:41,836 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:41,890 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:41,911 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:41,975 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:41,996 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:42,057 - DEBUG - 原始响应行: {"type": "content", "data": "\u4fc3\u8fdb"}
+2025-03-26 18:01:42,079 - DEBUG - 原始响应行: {"type": "content", "data": "\u6709\u76ca"}
+2025-03-26 18:01:42,139 - DEBUG - 原始响应行: {"type": "content", "data": "\u5fae\u751f\u7269"}
+2025-03-26 18:01:42,161 - DEBUG - 原始响应行: {"type": "content", "data": "\u751f\u957f"}
+2025-03-26 18:01:42,220 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:42,243 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:42,303 - DEBUG - 原始响应行: {"type": "content", "data": "\u6539\u826f"}
+2025-03-26 18:01:42,391 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:42,413 - DEBUG - 原始响应行: {"type": "content", "data": "\u900f\u6c14"}
+2025-03-26 18:01:42,471 - DEBUG - 原始响应行: {"type": "content", "data": "\u6027\u548c"}
+2025-03-26 18:01:42,492 - DEBUG - 原始响应行: {"type": "content", "data": "\u76d0"}
+2025-03-26 18:01:42,548 - DEBUG - 原始响应行: {"type": "content", "data": "\u78b1"}
+2025-03-26 18:01:42,569 - DEBUG - 原始响应行: {"type": "content", "data": "\u5316"}
+2025-03-26 18:01:42,632 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:42,715 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-03-26 18:01:42,737 - DEBUG - 原始响应行: {"type": "content", "data": "4"}
+2025-03-26 18:01:42,757 - DEBUG - 原始响应行: {"type": "content", "data": "."}
+2025-03-26 18:01:42,797 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:42,819 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f7f\u7528"}
+2025-03-26 18:01:42,880 - DEBUG - 原始响应行: {"type": "content", "data": "\u6210\u672c"}
+2025-03-26 18:01:42,902 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:42,977 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:43,000 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:43,051 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:43,072 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:43,128 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f7f\u7528"}
+2025-03-26 18:01:43,150 - DEBUG - 原始响应行: {"type": "content", "data": "\u6210\u672c"}
+2025-03-26 18:01:43,209 - DEBUG - 原始响应行: {"type": "content", "data": "\u4ec5\u4e3a"}
+2025-03-26 18:01:43,231 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:43,292 - DEBUG - 原始响应行: {"type": "content", "data": "\u4eba\u5de5"}
+2025-03-26 18:01:43,313 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:43,374 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u56db"}
+2025-03-26 18:01:43,457 - DEBUG - 原始响应行: {"type": "content", "data": "\u5206\u4e4b\u4e00"}
+2025-03-26 18:01:43,478 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:43,562 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:43,620 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:43,643 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:43,703 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:43,724 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:43,784 - DEBUG - 原始响应行: {"type": "content", "data": "\u5bf9\u6bd4"}
+2025-03-26 18:01:43,868 - DEBUG - 原始响应行: {"type": "content", "data": "\u5316\u5de5"}
+2025-03-26 18:01:43,890 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:43,950 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-03-26 18:01:43,972 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:44,029 - DEBUG - 原始响应行: {"type": "content", "data": "\u7efc\u5408"}
+2025-03-26 18:01:44,050 - DEBUG - 原始响应行: {"type": "content", "data": "\u6027\u4ef7\u6bd4"}
+2025-03-26 18:01:44,114 - DEBUG - 原始响应行: {"type": "content", "data": "\u66f4\u9ad8"}
+2025-03-26 18:01:44,135 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:44,196 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e14"}
+2025-03-26 18:01:44,217 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:44,281 - DEBUG - 原始响应行: {"type": "content", "data": "\u65e0"}
+2025-03-26 18:01:44,302 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:44,360 - DEBUG - 原始响应行: {"type": "content", "data": "\u5371\u5bb3"}
+2025-03-26 18:01:44,443 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:44,464 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:44,524 - DEBUG - 原始响应行: {"type": "content", "data": "\u751a\u81f3"}
+2025-03-26 18:01:44,546 - DEBUG - 原始响应行: {"type": "content", "data": "\u80fd"}
+2025-03-26 18:01:44,609 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:44,690 - DEBUG - 原始响应行: {"type": "content", "data": "\u6539\u5584"}
+2025-03-26 18:01:44,712 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:44,773 - DEBUG - 原始响应行: {"type": "content", "data": "\u8d28\u91cf"}
+2025-03-26 18:01:44,795 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:44,856 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:44,937 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-03-26 18:01:44,958 - DEBUG - 原始响应行: {"type": "content", "data": "5"}
+2025-03-26 18:01:44,979 - DEBUG - 原始响应行: {"type": "content", "data": "."}
+2025-03-26 18:01:45,020 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:45,041 - DEBUG - 原始响应行: {"type": "content", "data": "\u9002\u7528"}
+2025-03-26 18:01:45,100 - DEBUG - 原始响应行: {"type": "content", "data": "\u573a\u666f"}
+2025-03-26 18:01:45,186 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:45,267 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:45,290 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:45,311 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:45,347 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:45,368 - DEBUG - 原始响应行: {"type": "content", "data": "\u5bf9"}
+2025-03-26 18:01:45,432 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:45,453 - DEBUG - 原始响应行: {"type": "content", "data": "30"}
+2025-03-26 18:01:45,512 - DEBUG - 原始响应行: {"type": "content", "data": "cm"}
+2025-03-26 18:01:45,533 - DEBUG - 原始响应行: {"type": "content", "data": "\u4ee5\u4e0b\u7684"}
+2025-03-26 18:01:45,595 - DEBUG - 原始响应行: {"type": "content", "data": "\u6742\u8349"}
+2025-03-26 18:01:45,617 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548\u679c"}
+2025-03-26 18:01:45,678 - DEBUG - 原始响应行: {"type": "content", "data": "\u6700\u4f73"}
+2025-03-26 18:01:45,700 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:45,759 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:45,846 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:45,867 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:45,889 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:45,923 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:45,945 - DEBUG - 原始响应行: {"type": "content", "data": "\u9488\u5bf9"}
+2025-03-26 18:01:46,021 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:46,044 - DEBUG - 原始响应行: {"type": "content", "data": "\u987d\u56fa"}
+2025-03-26 18:01:46,086 - DEBUG - 原始响应行: {"type": "content", "data": "\u6742\u8349"}
+2025-03-26 18:01:46,108 - DEBUG - 原始响应行: {"type": "content", "data": "\uff08"}
+2025-03-26 18:01:46,167 - DEBUG - 原始响应行: {"type": "content", "data": "\u5982\u6c34"}
+2025-03-26 18:01:46,196 - DEBUG - 原始响应行: {"type": "content", "data": "\u82b1\u751f"}
+2025-03-26 18:01:46,254 - DEBUG - 原始响应行: {"type": "content", "data": "\uff09"}
+2025-03-26 18:01:46,276 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:46,334 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:46,355 - DEBUG - 原始响应行: {"type": "content", "data": "\u521d\u671f"}
+2025-03-26 18:01:46,416 - DEBUG - 原始响应行: {"type": "content", "data": "\u9700"}
+2025-03-26 18:01:46,438 - DEBUG - 原始响应行: {"type": "content", "data": "\u52a0\u5927"}
+2025-03-26 18:01:46,500 - DEBUG - 原始响应行: {"type": "content", "data": "\u7528\u91cf"}
+2025-03-26 18:01:46,521 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:46,584 - DEBUG - 原始响应行: {"type": "content", "data": "\u540e\u7eed"}
+2025-03-26 18:01:46,606 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef"}
+2025-03-26 18:01:46,663 - DEBUG - 原始响应行: {"type": "content", "data": "\u51cf\u5c11"}
+2025-03-26 18:01:46,684 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:46,746 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f46"}
+2025-03-26 18:01:46,828 - DEBUG - 原始响应行: {"type": "content", "data": "\u603b\u4f53"}
+2025-03-26 18:01:46,849 - DEBUG - 原始响应行: {"type": "content", "data": "\u6210\u672c"}
+2025-03-26 18:01:46,912 - DEBUG - 原始响应行: {"type": "content", "data": "\u4ecd"}
+2025-03-26 18:01:46,933 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f4e\u4e8e"}
+2025-03-26 18:01:46,991 - DEBUG - 原始响应行: {"type": "content", "data": "\u4eba\u5de5"}
+2025-03-26 18:01:47,012 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:47,206 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:47,227 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:47,248 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:47,268 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:47,289 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:47,310 - DEBUG - 原始响应行: {"type": "content", "data": "\u9488\u5bf9"}
+2025-03-26 18:01:47,365 - DEBUG - 原始响应行: {"type": "content", "data": "\u6c34"}
+2025-03-26 18:01:47,405 - DEBUG - 原始响应行: {"type": "content", "data": "\u82b1\u751f"}
+2025-03-26 18:01:47,427 - DEBUG - 原始响应行: {"type": "content", "data": "\u7b49"}
+2025-03-26 18:01:47,487 - DEBUG - 原始响应行: {"type": "content", "data": "\u6742\u8349"}
+2025-03-26 18:01:47,577 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:47,599 - DEBUG - 原始响应行: {"type": "content", "data": "\u9700"}
+2025-03-26 18:01:47,660 - DEBUG - 原始响应行: {"type": "content", "data": "\u91c7\u7528"}
+2025-03-26 18:01:47,682 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:47,745 - DEBUG - 原始响应行: {"type": "content", "data": "\u597d"}
+2025-03-26 18:01:47,767 - DEBUG - 原始响应行: {"type": "content", "data": "\u6c27"}
+2025-03-26 18:01:47,818 - DEBUG - 原始响应行: {"type": "content", "data": "\u6cd5"}
+2025-03-26 18:01:47,840 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:47,904 - DEBUG - 原始响应行: {"type": "content", "data": "\u65bd\u7528"}
+2025-03-26 18:01:47,984 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:48,066 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-03-26 18:01:48,088 - DEBUG - 原始响应行: {"type": "content", "data": "6"}
+2025-03-26 18:01:48,161 - DEBUG - 原始响应行: {"type": "content", "data": "."}
+2025-03-26 18:01:48,183 - DEBUG - 原始响应行: {"type": "content", "data": " **"}
+2025-03-26 18:01:48,242 - DEBUG - 原始响应行: {"type": "content", "data": "\u73af\u4fdd"}
+2025-03-26 18:01:48,263 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f18\u52bf"}
+2025-03-26 18:01:48,324 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:48,407 - DEBUG - 原始响应行: {"type": "content", "data": "  \n"}
+2025-03-26 18:01:48,429 - DEBUG - 原始响应行: {"type": "content", "data": "  "}
+2025-03-26 18:01:48,450 - DEBUG - 原始响应行: {"type": "content", "data": " -"}
+2025-03-26 18:01:48,483 - DEBUG - 原始响应行: {"type": "content", "data": " "}
+2025-03-26 18:01:48,567 - DEBUG - 原始响应行: {"type": "content", "data": "\u65e0"}
+2025-03-26 18:01:48,589 - DEBUG - 原始响应行: {"type": "content", "data": "\u5316\u5b66"}
+2025-03-26 18:01:48,650 - DEBUG - 原始响应行: {"type": "content", "data": "\u6b8b\u7559"}
+2025-03-26 18:01:48,672 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:48,732 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:48,814 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e0d"}
+2025-03-26 18:01:48,835 - DEBUG - 原始响应行: {"type": "content", "data": "\u6c61\u67d3"}
+2025-03-26 18:01:48,899 - DEBUG - 原始响应行: {"type": "content", "data": "\u6c34\u6e90"}
+2025-03-26 18:01:48,920 - DEBUG - 原始响应行: {"type": "content", "data": "\u548c"}
+2025-03-26 18:01:48,982 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:49,004 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-03-26 18:01:49,063 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:49,084 - DEBUG - 原始响应行: {"type": "content", "data": "\u7b26\u5408"}
+2025-03-26 18:01:49,149 - DEBUG - 原始响应行: {"type": "content", "data": "\u53ef\u6301\u7eed"}
+2025-03-26 18:01:49,171 - DEBUG - 原始响应行: {"type": "content", "data": "\u519c\u4e1a"}
+2025-03-26 18:01:49,232 - DEBUG - 原始响应行: {"type": "content", "data": "\u9700\u6c42"}
+2025-03-26 18:01:49,309 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:49,395 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-03-26 18:01:49,426 - DEBUG - 原始响应行: {"type": "content", "data": "\u603b\u7ed3"}
+2025-03-26 18:01:49,478 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1a"}
+2025-03-26 18:01:49,500 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-03-26 18:01:49,561 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-03-26 18:01:49,583 - DEBUG - 原始响应行: {"type": "content", "data": "\u751f\u7269"}
+2025-03-26 18:01:49,643 - DEBUG - 原始响应行: {"type": "content", "data": "\u63a7"}
+2025-03-26 18:01:49,665 - DEBUG - 原始响应行: {"type": "content", "data": "\u8349"}
+2025-03-26 18:01:49,733 - DEBUG - 原始响应行: {"type": "content", "data": "\u662f\u4e00\u6b3e"}
+2025-03-26 18:01:49,753 - DEBUG - 原始响应行: {"type": "content", "data": "\u9ad8\u6548"}
+2025-03-26 18:01:49,809 - DEBUG - 原始响应行: {"type": "content", "data": "\u3001"}
+2025-03-26 18:01:49,831 - DEBUG - 原始响应行: {"type": "content", "data": "\u7ecf\u6d4e"}
+2025-03-26 18:01:49,893 - DEBUG - 原始响应行: {"type": "content", "data": "\u3001"}
+2025-03-26 18:01:49,914 - DEBUG - 原始响应行: {"type": "content", "data": "\u73af\u4fdd"}
+2025-03-26 18:01:49,985 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u751f\u7269"}
+2025-03-26 18:01:50,059 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:50,080 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-03-26 18:01:50,144 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:50,166 - DEBUG - 原始响应行: {"type": "content", "data": "\u517c\u5177"}
+2025-03-26 18:01:50,226 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:01:50,248 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e0e"}
+2025-03-26 18:01:50,308 - DEBUG - 原始响应行: {"type": "content", "data": "\u571f\u58e4"}
+2025-03-26 18:01:50,329 - DEBUG - 原始响应行: {"type": "content", "data": "\u6539\u826f"}
+2025-03-26 18:01:50,391 - DEBUG - 原始响应行: {"type": "content", "data": "\u529f\u80fd"}
+2025-03-26 18:01:50,413 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:01:50,474 - DEBUG - 原始响应行: {"type": "content", "data": "\u9002\u5408"}
+2025-03-26 18:01:50,497 - DEBUG - 原始响应行: {"type": "content", "data": "\u5927\u9762\u79ef"}
+2025-03-26 18:01:50,555 - DEBUG - 原始响应行: {"type": "content", "data": "\u63a8\u5e7f"}
+2025-03-26 18:01:50,577 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f7f\u7528"}
+2025-03-26 18:01:50,633 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:01:50,654 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:01:50,675 - DEBUG - 原始响应行: {"type": "sources", "data": ["\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx"]}
+2025-03-26 18:04:04,995 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:04:07,000 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:04:07,000 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:04:11,878 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:04:13,881 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:04:13,881 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:04:30,129 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:04:32,135 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:04:32,135 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:04:32,139 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:04:34,143 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 18:04:34,143 - DEBUG - 响应头: {'date': 'Wed, 26 Mar 2025 10:04:33 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 18:04:38,490 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:04:38,511 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-03-26 18:04:38,965 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-03-26 18:04:39,050 - DEBUG - 原始响应行: {"type": "content", "data": "\u751f\u7269"}
+2025-03-26 18:04:39,072 - DEBUG - 原始响应行: {"type": "content", "data": "\u63a7"}
+2025-03-26 18:04:39,129 - DEBUG - 原始响应行: {"type": "content", "data": "\u8349\u7684"}
+2025-03-26 18:04:39,150 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:04:39,218 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-03-26 18:04:39,240 - DEBUG - 原始响应行: {"type": "content", "data": "\u6301"}
+2025-03-26 18:04:39,293 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548"}
+2025-03-26 18:04:39,314 - DEBUG - 原始响应行: {"type": "content", "data": "35"}
+2025-03-26 18:04:39,375 - DEBUG - 原始响应行: {"type": "content", "data": "\u5929"}
+2025-03-26 18:04:39,395 - DEBUG - 原始响应行: {"type": "content", "data": "\u5de6\u53f3"}
+2025-03-26 18:04:39,457 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:04:39,479 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:04:39,500 - DEBUG - 原始响应行: {"type": "sources", "data": ["\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx"]}
+2025-03-26 18:23:20,776 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:23:22,781 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-03-26 18:23:22,782 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-03-26 18:23:29,337 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:23:38,108 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 114
+2025-03-26 18:23:38,109 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":"4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006"}
+2025-03-26 18:23:38,111 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:23:40,117 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:23:40,117 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:23:48,603 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:23:50,619 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:23:50,620 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:23:50,622 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:23:52,642 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 18:23:52,642 - DEBUG - 响应头: {'date': 'Wed, 26 Mar 2025 10:23:52 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 18:23:57,154 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:23:57,176 - DEBUG - 原始响应行: {"type": "content", "data": "\u6839\u636e"}
+2025-03-26 18:23:57,795 - DEBUG - 原始响应行: {"type": "content", "data": "\u63d0\u4f9b"}
+2025-03-26 18:23:57,876 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u4fe1\u606f"}
+2025-03-26 18:23:57,897 - DEBUG - 原始响应行: {"type": "content", "data": "\u7247\u6bb5"}
+2025-03-26 18:23:57,957 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:23:58,118 - DEBUG - 原始响应行: {"type": "content", "data": "\u6ca1\u6709"}
+2025-03-26 18:23:58,139 - DEBUG - 原始响应行: {"type": "content", "data": "\u63d0\u53ca"}
+2025-03-26 18:23:58,199 - DEBUG - 原始响应行: {"type": "content", "data": "\u4efb\u4f55"}
+2025-03-26 18:23:58,220 - DEBUG - 原始响应行: {"type": "content", "data": "\u5173\u4e8e"}
+2025-03-26 18:23:58,280 - DEBUG - 原始响应行: {"type": "content", "data": "\u201c"}
+2025-03-26 18:23:58,301 - DEBUG - 原始响应行: {"type": "content", "data": "\u9c8d"}
+2025-03-26 18:23:58,360 - DEBUG - 原始响应行: {"type": "content", "data": "\u6210"}
+2025-03-26 18:23:58,382 - DEBUG - 原始响应行: {"type": "content", "data": "\u201d"}
+2025-03-26 18:23:58,447 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u5185\u5bb9"}
+2025-03-26 18:23:58,468 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:23:58,527 - DEBUG - 原始响应行: {"type": "content", "data": "\u56e0\u6b64"}
+2025-03-26 18:23:58,549 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:23:58,608 - DEBUG - 原始响应行: {"type": "content", "data": "\u6211"}
+2025-03-26 18:23:58,631 - DEBUG - 原始响应行: {"type": "content", "data": "\u65e0\u6cd5"}
+2025-03-26 18:23:58,691 - DEBUG - 原始响应行: {"type": "content", "data": "\u56de\u7b54"}
+2025-03-26 18:23:58,713 - DEBUG - 原始响应行: {"type": "content", "data": "\u5173\u4e8e"}
+2025-03-26 18:23:58,773 - DEBUG - 原始响应行: {"type": "content", "data": "\u201c"}
+2025-03-26 18:23:58,853 - DEBUG - 原始响应行: {"type": "content", "data": "\u9c8d"}
+2025-03-26 18:23:58,874 - DEBUG - 原始响应行: {"type": "content", "data": "\u6210"}
+2025-03-26 18:23:58,932 - DEBUG - 原始响应行: {"type": "content", "data": "\u201d"}
+2025-03-26 18:23:58,954 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u95ee\u9898"}
+2025-03-26 18:23:59,017 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:23:59,039 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:23:59,060 - DEBUG - 原始响应行: {"type": "sources", "data": ["\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx"]}
+2025-03-26 18:24:13,474 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:24:15,487 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:24:15,487 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 18:24:15,491 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:24:17,498 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-03-26 18:24:17,500 - DEBUG - 响应头: {'date': 'Wed, 26 Mar 2025 10:24:16 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-03-26 18:24:21,424 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:24:21,446 - DEBUG - 原始响应行: {"type": "content", "data": "\u6839\u636e"}
+2025-03-26 18:24:21,919 - DEBUG - 原始响应行: {"type": "content", "data": "\u63d0\u4f9b"}
+2025-03-26 18:24:21,999 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u4fe1\u606f"}
+2025-03-26 18:24:22,021 - DEBUG - 原始响应行: {"type": "content", "data": "\u7247\u6bb5"}
+2025-03-26 18:24:22,085 - DEBUG - 原始响应行: {"type": "content", "data": "1"}
+2025-03-26 18:24:22,159 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-03-26 18:24:22,180 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-03-26 18:24:22,243 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242\u7684"}
+2025-03-26 18:24:22,264 - DEBUG - 原始响应行: {"type": "content", "data": "\u6301"}
+2025-03-26 18:24:22,325 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548"}
+2025-03-26 18:24:22,346 - DEBUG - 原始响应行: {"type": "content", "data": "\u65f6\u95f4\u4e3a"}
+2025-03-26 18:24:22,402 - DEBUG - 原始响应行: {"type": "content", "data": "35"}
+2025-03-26 18:24:22,423 - DEBUG - 原始响应行: {"type": "content", "data": "\u5929"}
+2025-03-26 18:24:22,483 - DEBUG - 原始响应行: {"type": "content", "data": "\u5de6\u53f3"}
+2025-03-26 18:24:22,505 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-03-26 18:24:22,564 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-03-26 18:24:22,588 - DEBUG - 原始响应行: {"type": "sources", "data": ["\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx"]}
+2025-03-26 18:25:53,522 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-03-26 18:25:55,528 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-03-26 18:25:55,528 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-03-26 20:38:22,061 - DEBUG - Starting new HTTP connection (1): localhost:8000
