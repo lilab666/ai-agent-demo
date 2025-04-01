@@ -21,8 +21,8 @@ app.include_router(chat.router)
 app.include_router(status.router)
 app.include_router(files.router)
 
-# 初始化知识库
-knowledge_base = KnowledgeBase()
+# # 初始化知识库
+# knowledge_base = KnowledgeBase()
 
 if __name__ == "__main__":
     import uvicorn

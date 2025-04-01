@@ -1,8 +1,7 @@
-# routers/upload.py
 from dotenv import load_dotenv
 from fastapi import APIRouter, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
-from typing import List, Tuple
+from typing import List
 from ..services.file_processing import process_files
 from ..services.knowledge_base import knowledge_base
 from tenacity import retry, stop_after_attempt, wait_fixed
@@ -21,8 +20,12 @@ async def upload_endpoint(
         base_url: str = os.getenv("QWEN_BASE_URL")
 ):
     try:
+        # 处理文件并返回文档的元数据和嵌入信息
         chunks, embeddings, filenames = process_files(files, api_key, base_url)
+
+        # 更新知识库并将文件元数据存储到 JSON
         knowledge_base.update_knowledge_base(chunks, embeddings, filenames)
+
         return JSONResponse(
             content={
                 "status": "success",
