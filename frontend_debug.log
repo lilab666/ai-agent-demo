@@ -1221,3 +1221,123 @@
 2025-04-01 16:03:21,430 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
 2025-04-01 16:03:21,451 - DEBUG - 原始响应行: {"type": "content", "data": ""}
 2025-04-01 16:03:21,473 - DEBUG - 原始响应行: {"type": "sources", "data": ["\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx"]}
+2025-04-01 16:48:22,040 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:48:23,883 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:48:24,046 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-04-01 16:48:24,047 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-04-01 16:48:25,888 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-04-01 16:48:25,888 - DEBUG - 知识库状态: {'ready': False, 'version': 0, 'chunk_count': 0}
+2025-04-01 16:48:29,538 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:48:41,012 - DEBUG - http://localhost:8000 "POST /upload HTTP/1.1" 200 114
+2025-04-01 16:48:41,014 - DEBUG - 上传响应: 200 {"status":"success","chunk_count":70,"version":"4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006"}
+2025-04-01 16:48:41,018 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:48:43,021 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 108
+2025-04-01 16:48:43,022 - DEBUG - 知识库状态: {'ready': True, 'version': '4d79d17b462bab894f94a75de74d3fcfe535753dd48c086a7cd991fc524b4006', 'chunk_count': 70}
+2025-04-01 16:49:15,404 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:49:17,410 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-04-01 16:49:17,410 - DEBUG - 知识库状态: {'ready': True, 'version': 0, 'chunk_count': 70}
+2025-04-01 16:49:21,114 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:49:23,118 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-04-01 16:49:23,119 - DEBUG - 知识库状态: {'ready': True, 'version': 0, 'chunk_count': 70}
+2025-04-01 16:49:38,352 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:49:40,356 - DEBUG - http://localhost:8000 "GET /status HTTP/1.1" 200 43
+2025-04-01 16:49:40,356 - DEBUG - 知识库状态: {'ready': True, 'version': 0, 'chunk_count': 70}
+2025-04-01 16:49:40,359 - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-04-01 16:49:42,368 - DEBUG - http://localhost:8000 "POST /chat HTTP/1.1" 200 None
+2025-04-01 16:49:42,372 - DEBUG - 响应头: {'date': 'Tue, 01 Apr 2025 08:49:41 GMT', 'server': 'uvicorn', 'content-type': 'application/x-ndjson', 'Transfer-Encoding': 'chunked'}
+2025-04-01 16:49:51,054 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-04-01 16:49:51,076 - DEBUG - 原始响应行: {"type": "content", "data": "\u6839\u636e"}
+2025-04-01 16:49:51,109 - DEBUG - 原始响应行: {"type": "content", "data": "\u63d0\u4f9b"}
+2025-04-01 16:49:51,132 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u4fe1\u606f"}
+2025-04-01 16:49:51,153 - DEBUG - 原始响应行: {"type": "content", "data": "\u7247\u6bb5"}
+2025-04-01 16:49:51,174 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-04-01 16:49:51,195 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-04-01 16:49:51,216 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-04-01 16:49:51,237 - DEBUG - 原始响应行: {"type": "content", "data": "\u4ea7\u54c1"}
+2025-04-01 16:49:51,258 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e3b\u8981"}
+2025-04-01 16:49:51,279 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f5c\u4e3a"}
+2025-04-01 16:49:51,300 - DEBUG - 原始响应行: {"type": "content", "data": "\u6740\u866b"}
+2025-04-01 16:49:51,322 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-04-01 16:49:51,344 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f7f\u7528"}
+2025-04-01 16:49:51,368 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-04-01 16:49:51,389 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e76\u672a"}
+2025-04-01 16:49:51,411 - DEBUG - 原始响应行: {"type": "content", "data": "\u63d0\u53ca"}
+2025-04-01 16:49:51,435 - DEBUG - 原始响应行: {"type": "content", "data": "\u5177\u6709"}
+2025-04-01 16:49:51,457 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-04-01 16:49:51,478 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-04-01 16:49:51,499 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u529f\u80fd"}
+2025-04-01 16:49:51,519 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-04-01 16:49:51,540 - DEBUG - 原始响应行: {"type": "content", "data": "\u4fe1\u606f"}
+2025-04-01 16:49:51,561 - DEBUG - 原始响应行: {"type": "content", "data": "\u7247\u6bb5"}
+2025-04-01 16:49:51,582 - DEBUG - 原始响应行: {"type": "content", "data": "1"}
+2025-04-01 16:49:51,603 - DEBUG - 原始响应行: {"type": "content", "data": "\u660e\u786e\u6307\u51fa"}
+2025-04-01 16:49:51,626 - DEBUG - 原始响应行: {"type": "content", "data": "\u201c"}
+2025-04-01 16:49:51,648 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-04-01 16:49:51,670 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-04-01 16:49:51,691 - DEBUG - 原始响应行: {"type": "content", "data": "\u65e0\u6cd5"}
+2025-04-01 16:49:51,711 - DEBUG - 原始响应行: {"type": "content", "data": "\u8fdb\u884c"}
+2025-04-01 16:49:51,732 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-04-01 16:49:51,753 - DEBUG - 原始响应行: {"type": "content", "data": "\u5c01\u95ed"}
+2025-04-01 16:49:51,774 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-04-01 16:49:51,795 - DEBUG - 原始响应行: {"type": "content", "data": "\u5316\u5de5"}
+2025-04-01 16:49:51,816 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684"}
+2025-04-01 16:49:51,837 - DEBUG - 原始响应行: {"type": "content", "data": "\u624d\u884c"}
+2025-04-01 16:49:51,858 - DEBUG - 原始响应行: {"type": "content", "data": "\u201d\uff0c"}
+2025-04-01 16:49:51,879 - DEBUG - 原始响应行: {"type": "content", "data": "\u56e0\u6b64"}
+2025-04-01 16:49:51,900 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-04-01 16:49:51,923 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-04-01 16:49:51,944 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e0d\u5177\u5907"}
+2025-04-01 16:49:51,965 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-04-01 16:49:51,986 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548\u679c"}
+2025-04-01 16:49:52,007 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-04-01 16:49:52,028 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-04-01 16:49:52,049 - DEBUG - 原始响应行: {"type": "content", "data": "\u5176\u4f59"}
+2025-04-01 16:49:52,070 - DEBUG - 原始响应行: {"type": "content", "data": "\u4fe1\u606f"}
+2025-04-01 16:49:52,091 - DEBUG - 原始响应行: {"type": "content", "data": "\u7247\u6bb5"}
+2025-04-01 16:49:52,112 - DEBUG - 原始响应行: {"type": "content", "data": "\u63cf\u8ff0"}
+2025-04-01 16:49:52,133 - DEBUG - 原始响应行: {"type": "content", "data": "\u7684\u662f"}
+2025-04-01 16:49:52,154 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-04-01 16:49:52,175 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-04-01 16:49:52,196 - DEBUG - 原始响应行: {"type": "content", "data": "\u4f5c\u4e3a"}
+2025-04-01 16:49:52,217 - DEBUG - 原始响应行: {"type": "content", "data": "\u6740\u866b"}
+2025-04-01 16:49:52,238 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242\u7684"}
+2025-04-01 16:49:52,259 - DEBUG - 原始响应行: {"type": "content", "data": "\u7279\u6027"}
+2025-04-01 16:49:52,280 - DEBUG - 原始响应行: {"type": "content", "data": "\uff08"}
+2025-04-01 16:49:52,302 - DEBUG - 原始响应行: {"type": "content", "data": "\u5982"}
+2025-04-01 16:49:52,322 - DEBUG - 原始响应行: {"type": "content", "data": "\u5e7f"}
+2025-04-01 16:49:52,344 - DEBUG - 原始响应行: {"type": "content", "data": "\u8c31"}
+2025-04-01 16:49:52,364 - DEBUG - 原始响应行: {"type": "content", "data": "\u63a7"}
+2025-04-01 16:49:52,385 - DEBUG - 原始响应行: {"type": "content", "data": "\u866b"}
+2025-04-01 16:49:52,407 - DEBUG - 原始响应行: {"type": "content", "data": "\u3001"}
+2025-04-01 16:49:52,428 - DEBUG - 原始响应行: {"type": "content", "data": "\u751f\u7269"}
+2025-04-01 16:49:52,449 - DEBUG - 原始响应行: {"type": "content", "data": "\u5236\u5242"}
+2025-04-01 16:49:52,470 - DEBUG - 原始响应行: {"type": "content", "data": "\u3001"}
+2025-04-01 16:49:52,492 - DEBUG - 原始响应行: {"type": "content", "data": "\u5feb\u901f"}
+2025-04-01 16:49:52,514 - DEBUG - 原始响应行: {"type": "content", "data": "\u89c1\u6548"}
+2025-04-01 16:49:52,536 - DEBUG - 原始响应行: {"type": "content", "data": "\u7b49"}
+2025-04-01 16:49:52,557 - DEBUG - 原始响应行: {"type": "content", "data": "\uff09\uff0c"}
+2025-04-01 16:49:52,579 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e0e"}
+2025-04-01 16:49:52,599 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-04-01 16:49:52,621 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-04-01 16:49:52,642 - DEBUG - 原始响应行: {"type": "content", "data": "\u65e0\u5173"}
+2025-04-01 16:49:52,663 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-04-01 16:49:52,683 - DEBUG - 原始响应行: {"type": "content", "data": "  \n\n"}
+2025-04-01 16:49:52,704 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-04-01 16:49:52,725 - DEBUG - 原始响应行: {"type": "content", "data": "\u7ed3\u8bba"}
+2025-04-01 16:49:52,746 - DEBUG - 原始响应行: {"type": "content", "data": "**"}
+2025-04-01 16:49:52,767 - DEBUG - 原始响应行: {"type": "content", "data": "\uff1a"}
+2025-04-01 16:49:52,788 - DEBUG - 原始响应行: {"type": "content", "data": "\u9504"}
+2025-04-01 16:49:52,809 - DEBUG - 原始响应行: {"type": "content", "data": "\u592b"}
+2025-04-01 16:49:52,830 - DEBUG - 原始响应行: {"type": "content", "data": "\u6ca1\u6709"}
+2025-04-01 16:49:52,850 - DEBUG - 原始响应行: {"type": "content", "data": "\u9664\u8349"}
+2025-04-01 16:49:52,871 - DEBUG - 原始响应行: {"type": "content", "data": "\u5242"}
+2025-04-01 16:49:52,893 - DEBUG - 原始响应行: {"type": "content", "data": "\u6548\u679c"}
+2025-04-01 16:49:52,917 - DEBUG - 原始响应行: {"type": "content", "data": "\uff0c"}
+2025-04-01 16:49:52,948 - DEBUG - 原始响应行: {"type": "content", "data": "\u5176"}
+2025-04-01 16:49:52,971 - DEBUG - 原始响应行: {"type": "content", "data": "\u6838\u5fc3"}
+2025-04-01 16:49:52,992 - DEBUG - 原始响应行: {"type": "content", "data": "\u529f\u80fd"}
+2025-04-01 16:49:53,012 - DEBUG - 原始响应行: {"type": "content", "data": "\u4e3a"}
+2025-04-01 16:49:53,033 - DEBUG - 原始响应行: {"type": "content", "data": "\u6740\u866b"}
+2025-04-01 16:49:53,059 - DEBUG - 原始响应行: {"type": "content", "data": "\u3002"}
+2025-04-01 16:49:53,081 - DEBUG - 原始响应行: {"type": "content", "data": ""}
+2025-04-01 16:49:53,102 - DEBUG - 原始响应行: {"type": "sources", "data": ["\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx", "\u4ea7\u54c1\u4fe1\u606f\u8d44\u6599\u5e93.docx"]}
