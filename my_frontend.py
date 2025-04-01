@@ -1,4 +1,4 @@
-# frontend.py
+# my_frontend.py
 # 前端依赖：pip install streamlit requests
 import streamlit as st
 import requests
