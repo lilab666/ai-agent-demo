@@ -4,12 +4,13 @@ import time
 import os
 from pathlib import Path
 from typing import List, Tuple
+import uuid
+from fastapi import UploadFile
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_unstructured import UnstructuredLoader
-from langchain_community.vectorstores import FAISS
-from fastapi import APIRouter, File, UploadFile, HTTPException
+from chromadb import Client
 from .embeddings import QwenEmbeddings
 from .knowledge_base import knowledge_base  # 导入持久化的知识库实例
 import json
@@ -18,22 +19,8 @@ import json
 RESOURCES_DIR = Path(__file__).parent.parent.parent / "resources"
 RESOURCES_DIR.mkdir(parents=True, exist_ok=True)
 
-# 设置元数据文件存储路径
-METADATA_PATH = RESOURCES_DIR / "metadata.json"
-
-
-def load_metadata():
-    """加载现有的文档元数据"""
-    if os.path.exists(METADATA_PATH):
-        with open(METADATA_PATH, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return []
-
-
-def save_metadata(metadata):
-    """将文档元数据保存到 JSON 文件"""
-    with open(METADATA_PATH, 'w', encoding='utf-8') as f:
-        json.dump(metadata, f, indent=4, ensure_ascii=False)
+# 创建一个Chroma客户端
+client = Client()  # 保存到本地路径
 
 
 def process_files(
@@ -44,7 +31,14 @@ def process_files(
     documents = []
     file_names = []
     temp_files = []
-    metadata = load_metadata()  # 获取现有的文档元数据
+    metadata = []  # 获取现有的文档元数据
+
+    # 创建或获取 Chroma 集合
+    collection_name = "my_collection"
+    if collection_name not in client.list_collections():  # 如果集合不存在，创建它
+        collection = client.create_collection(collection_name)
+    else:
+        collection = client.get_collection(collection_name)  # 获取现有集合
 
     try:
         for file in files:
@@ -71,7 +65,8 @@ def process_files(
             elif file_extension == ".docx":
                 loader = UnstructuredLoader(tmp_path, mode="elements")
             else:
-                print(f"跳过不支持的类型: 文件名[{file.filename}] 扩展名[{file_extension}] 服务端类型[{file.content_type}]")
+                print(
+                    f"跳过不支持的类型: 文件名[{file.filename}] 扩展名[{file_extension}] 服务端类型[{file.content_type}]")
                 continue
 
             # 加载文档并更新元数据
@@ -83,6 +78,13 @@ def process_files(
                     "upload_time": time.strftime("%Y-%m-%d %H:%M:%S"),
                     "file_size": f"{len(file_content) / 1024:.1f}KB"
                 })
+
+                # 检查并确保元数据字段值是基本类型
+                for key, value in doc.metadata.items():
+                    if value is None:  # 如果值是 None，将其转为空字符串
+                        doc.metadata[key] = ""
+                    elif isinstance(value, list):  # 如果值是列表，将其转为字符串
+                        doc.metadata[key] = ', '.join(map(str, value))  # 将列表转为逗号分隔的字符串
 
                 # 存储文件元数据到列表
                 file_metadata = {
@@ -114,19 +116,25 @@ def process_files(
         # 初始化嵌入模型
         embeddings = QwenEmbeddings(api_key=qwen_api_key, base_url=qwen_base_url)
 
-        # 为每个文档生成嵌入并添加到文档的 metadata 字段中
-        document_texts = [doc.page_content for doc in chunks]
-        embeddings_list = embeddings.embed_documents(document_texts)
+        # document_texts = [doc.page_content for doc in chunks]
 
-        # 将嵌入存储在 metadata 字段中
-        for doc, embedding in zip(chunks, embeddings_list):
-            doc.metadata["embedding"] = embedding  # 将嵌入存储在 metadata 字段中
+        # 将嵌入存储在 embeddings 字段中，而不是 metadata
+        # embeddings_list = embeddings.embed_documents(document_texts)
+
+        # 为每个文档创建唯一的 ID（结合毫秒级时间戳和索引生成）
+        ids = [str(int(time.time() * 1000)) + str(i) for i in range(len(chunks))]  # 使用毫秒级时间戳和索引生成唯一ID
+        print(f"Generated IDs: {ids}")  # 打印生成的 IDs 以调试
+
+        # # 确保 IDs 列表被正确传递
+        # collection.add(
+        #     documents=[doc.page_content for doc in chunks],
+        #     metadatas=[doc.metadata for doc in chunks],
+        #     embeddings=embeddings_list,  # 存储嵌入向量
+        #     ids=ids  # 添加 IDs 参数
+        # )
 
         # 更新知识库并保存
-        knowledge_base.update_knowledge_base(chunks, embeddings, file_names)
-
-        # 保存更新后的元数据到 JSON 文件
-        save_metadata(metadata)
+        knowledge_base.update_knowledge_base(chunks, embeddings, file_names, ids)
 
         return chunks, embeddings, file_names
 

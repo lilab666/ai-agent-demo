@@ -24,7 +24,7 @@ async def upload_endpoint(
         chunks, embeddings, filenames = process_files(files, api_key, base_url)
 
         # 更新知识库并将文件元数据存储到 JSON
-        knowledge_base.update_knowledge_base(chunks, embeddings, filenames)
+        # knowledge_base.update_knowledge_base(chunks, embeddings, filenames)
 
         return JSONResponse(
             content={

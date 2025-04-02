@@ -22,15 +22,26 @@ async def list_files():
         if not files:
             raise HTTPException(status_code=404, detail="知识库为空，未找到文件")
 
+        metadatas = files['metadatas']
+
         # 需要返回每个文件的元数据（文件名、文件类型、上传时间等）
         file_details = []
-        for file in files:
-            file_details.append({
-                "file_name": file[1],  # file_name
-                "file_type": file[2],  # file_type
-                "upload_time": file[3],  # upload_time
-                "file_size": file[4]  # file_size
-            })
+        seen_files = set()  # 用来追踪已添加的文件
+
+        for file in metadatas:
+            file_metadata = (
+                file['source'], file['file_type'], file['upload_time'], file['file_size']
+            )
+
+            # 使用元数据中的几个字段作为唯一标识符
+            if file_metadata not in seen_files:  # 如果该文件元数据未出现过
+                seen_files.add(file_metadata)  # 将其加入到已处理的集合中
+                file_details.append({
+                    "file_name": file['source'],  # file_name
+                    "file_type": file['file_type'],  # file_type
+                    "upload_time": file['upload_time'],  # upload_time
+                    "file_size": file['file_size'],  # file_size
+                })
 
         return file_details
 
