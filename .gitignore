@@ -3,6 +3,8 @@
 # 忽略 resources 文件夹中的所有文件
 /resources/
 
+/resources_db/
+
 *.log
 
 /.streamlit/
