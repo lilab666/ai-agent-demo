@@ -1,10 +1,15 @@
 # app.py
+import os
+import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from backend.routers import upload, chat, status, files
 from backend.services.knowledge_base import knowledge_base
 import nltk
+
+# 自动添加项目根目录到模块搜索路径
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 load_dotenv()
 
