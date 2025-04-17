@@ -1,5 +1,4 @@
 # my_frontend.py
-# 前端依赖：pip install streamlit requests
 import streamlit as st
 import requests
 import json
@@ -14,7 +13,7 @@ logging.basicConfig(
 )
 
 # API配置
-BACKEND_URL = "http://localhost:8000"  # 确保与后端端口一致
+BACKEND_URL = "http://localhost:8000"
 
 # 初始化界面
 st.set_page_config(
@@ -26,14 +25,13 @@ st.set_page_config(
 
 
 def init_session_state():
-    """初始化会话状态"""
     if "messages" not in st.session_state:
         st.session_state.messages = []
     if "kb_ready" not in st.session_state:
         st.session_state.kb_ready = False
-    if "debug_mode" not in st.session_state:  # 新增调试模式状态
+    if "debug_mode" not in st.session_state:
         st.session_state.debug_mode = False
-    if "uploaded_files" not in st.session_state:  # 新增已上传文件记录
+    if "uploaded_files" not in st.session_state:
         st.session_state.uploaded_files = set()
 
 
@@ -41,11 +39,7 @@ init_session_state()
 
 
 def show_sidebar():
-    """侧边栏组件"""
     with st.sidebar:
-        # ... 其他代码保持不变 ...
-
-        # 文件上传组件（保持不变）
         uploaded_files = st.file_uploader(
             "上传文档（支持PDF/TXT/DOCX）",
             type=["pdf", "txt", "docx"],
@@ -54,12 +48,8 @@ def show_sidebar():
             key="file_uploader"
         )
 
-        # 文件上传处理逻辑修改
         if uploaded_files:
-            # 获取当前文件集合
             current_files = {f.name for f in uploaded_files}
-
-            # 只有当文件发生变化时才上传
             if current_files != st.session_state.uploaded_files:
                 st.session_state.uploaded_files = current_files
 
@@ -75,13 +65,14 @@ def show_sidebar():
                             files=files,
                             timeout=30
                         )
-                    logging.debug(f"上传响应: {response.status_code} {response.text}")  # 日志记录
+                    logging.debug(f"上传响应: {response.status_code} {response.text}")
 
                     if response.status_code == 200:
                         data = response.json()
                         if data["status"] == "success":
                             st.success(f"✅ 知识库更新成功！知识片段数：{data['chunk_count']}")
                             st.session_state.kb_ready = True
+                            st.rerun()
                     else:
                         st.error(f"❌ 上传失败：{response.text}")
 
@@ -92,12 +83,11 @@ def show_sidebar():
                 finally:
                     st.session_state.uploading = False
 
-        # 知识库状态显示
         st.divider()
         try:
             with st.spinner("🔄 获取知识库状态..."):
                 status = requests.get(f"{BACKEND_URL}/status", timeout=5).json()
-                logging.debug(f"知识库状态: {status}")  # 日志记录
+                logging.debug(f"知识库状态: {status}")
 
             status_icon = "✅" if status["ready"] else "❌"
             status_color = "green" if status["ready"] else "red"
@@ -113,6 +103,48 @@ def show_sidebar():
             st.error("⚠️ 无法连接知识库服务")
         except Exception as e:
             st.error(f"❌ 状态获取失败：{str(e)}")
+
+        # 展示上传文件列表
+        st.divider()
+        st.markdown("### 📄 已上传文件")
+        try:
+            response = requests.get(f"{BACKEND_URL}/files", timeout=5)
+            if response.status_code == 200:
+                file_list = response.json()
+                if file_list:
+                    for file in file_list:
+                        col1, col2, col3, col4 = st.columns([4, 3, 2, 1])
+                        with col1:
+                            st.write(file.get("file_name", "未知文件名"))
+                        with col2:
+                            st.write(file.get("upload_time", ""))
+                        with col3:
+                            st.write(file.get("file_size", ""))
+                        with col4:
+                            if st.button("🗑️ 删除", key=file["file_name"] + file["upload_time"]):
+                                try:
+                                    delete_response = requests.delete(
+                                        f"{BACKEND_URL}/files",
+                                        json={
+                                            "file_name": file["file_name"],
+                                            "upload_time": file["upload_time"]
+                                        },
+                                        timeout=10
+                                    )
+                                    if delete_response.status_code == 200:
+                                        st.success(f"✅ 删除成功：{file['file_name']}")
+                                        time.sleep(1)
+                                        st.rerun()
+                                    else:
+                                        st.error(f"❌ 删除失败：{delete_response.text}")
+                                except Exception as e:
+                                    st.error(f"⚠️ 删除异常：{str(e)}")
+                else:
+                    st.info("📭 当前知识库中还没有上传的文件")
+            else:
+                st.error("⚠️ 无法获取文件列表")
+        except Exception as e:
+            st.error(f"❌ 获取文件失败：{str(e)}")
 
 
 def chat_interface():
@@ -166,7 +198,7 @@ def chat_interface():
                             "k": 3
                         },
                         stream=True,
-                        timeout=(5, 30)  # 连接5秒，读取30秒超时
+                        timeout=(5, 120)  # 连接5秒，读取120秒超时
                 ) as response:
                     # 记录原始响应头
                     logging.debug(f"响应头: {response.headers}")
@@ -256,6 +288,6 @@ def chat_interface():
                     st.session_state.messages.pop()
 
 
-# 运行界面
+# 启动界面
 show_sidebar()
 chat_interface()
