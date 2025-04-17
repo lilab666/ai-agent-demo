@@ -1,9 +1,7 @@
-# services/chat.py
 import json
 import os
 from dotenv import load_dotenv
 from fastapi.responses import StreamingResponse
-
 from .knowledge_base import knowledge_base
 from openai import OpenAI
 from pydantic import BaseModel
@@ -15,11 +13,11 @@ load_dotenv()
 # 初始化 DeepSeek 客户端
 deepseek_client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
-
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(1))
 async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
     full_response = ""
     docs = []
+    metadata = []
     try:
         # 知识库模式预处理
         if request.mode == "knowledge":
@@ -27,9 +25,20 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
                 yield json.dumps({"type": "error", "data": "知识库未就绪，请先上传文档"}) + "\n"
                 return  # 显式结束生成器
 
-            docs = knowledge_base.vector_store.similarity_search(request.prompt, k=request.k)
+            # 生成查询的嵌入向量，确保是 1024 维
+            query_embeddings = knowledge_base.embeddings.embed_query(request.prompt, dimensions=1024)
+
+            # 在 Chroma 中执行相似度搜索
+            results = knowledge_base.collection.query(
+                query_embeddings=query_embeddings,  # 传递正确的嵌入向量
+                n_results=request.k  # 返回前 k 个相似的结果
+            )
+
+            # 获取匹配的文档和元数据
+            docs = results['documents']  # 提取匹配的文档
+            metadata = results['metadatas'][0]  # 提取文档的元数据
             context = "\n\n".join(
-                [f"【信息片段 {i + 1}】（来源：{doc.metadata['source']}）\n{doc.page_content}" for i, doc in enumerate(docs)]
+                [f"【信息片段 {i + 1}】（来源：{meta['source']}）\n{doc}" for i, (doc, meta) in enumerate(zip(docs, metadata))]
             )
             messages = [{"role": "user", "content": f"请严格根据以下信息回答问题：\n{context}\n\n问题：{request.prompt}"}]
         else:
@@ -48,7 +57,7 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
             yield json.dumps({"type": "content", "data": content}) + "\n"
 
         # 返回来源信息
-        yield json.dumps({"type": "sources", "data": [doc.metadata["source"] for doc in docs]}) + "\n"
+        yield json.dumps({"type": "sources", "data": [meta['source'] for meta in metadata]}) + "\n"
 
     except Exception as e:
         yield json.dumps({"type": "error", "data": f"生成回答失败：{str(e)}"}) + "\n"
