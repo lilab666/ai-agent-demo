@@ -18,6 +18,10 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
     full_response = ""
     docs = []
     metadata = []
+
+    # 添加系统提示
+    messages = [{"role": "system", "content": "你是一个严谨的智能助手，回答需基于提供的信息和历史消息"}]
+
     try:
         # 知识库模式预处理
         if request.mode == "knowledge":
@@ -40,21 +44,24 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
             context = "\n\n".join(
                 [f"【信息片段 {i + 1}】（来源：{meta['source']}）\n{doc}" for i, (doc, meta) in enumerate(zip(docs, metadata))]
             )
-            messages = [{"role": "user", "content": f"请严格根据以下信息回答问题：\n{context}\n\n问题：{request.prompt}"}]
+            messages.append({"role": "user", "content": f"请根据以下知识库提供片段(不一定符合问题需求)和之前的对话(当前问题很可能跟之前的内容关联)回答问题：\n{context}\n\n问题：{request.prompt}"})
         else:
-            messages = [{"role": "user", "content": request.prompt}]
+            messages.append({"role": "user", "content": request.prompt})
 
-        # 添加系统提示
-        messages.insert(0, {"role": "system", "content": "你是一个严谨的智能助手，回答需基于提供的信息"})
+
 
         # 调用 DeepSeek 生成响应
         response = deepseek_client.chat.completions.create(model="deepseek-chat", messages=messages, stream=True)
+
+        full_response = ""
 
         # 流式返回内容
         for chunk in response:
             content = chunk.choices[0].delta.content or ""
             full_response += content
             yield json.dumps({"type": "content", "data": content}) + "\n"
+
+        messages.append({"role": "assistant", "content": full_response})
 
         # 返回来源信息
         yield json.dumps({"type": "sources", "data": [meta['source'] for meta in metadata]}) + "\n"
