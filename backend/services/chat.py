@@ -13,14 +13,14 @@ load_dotenv()
 # 初始化 DeepSeek 客户端
 deepseek_client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
 
+# 添加系统提示
+messages = [{"role": "system", "content": "你是一个严谨的智能助手，回答需基于提供的信息和历史消息"}]
+
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(1))
 async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
     full_response = ""
     docs = []
     metadata = []
-
-    # 添加系统提示
-    messages = [{"role": "system", "content": "你是一个严谨的智能助手，回答需基于提供的信息和历史消息"}]
 
     try:
         # 知识库模式预处理
