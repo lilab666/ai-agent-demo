@@ -1,8 +1,15 @@
-from langchain.schema import Document
+# To install: pip install tavily-python
+import os
 
-docs = [Document(page_content="hello :     world\nfuck\tfuck", metadata={})]
+from dotenv import load_dotenv
+from tavily import TavilyClient
 
-for doc in docs:
-    doc.page_content = doc.page_content.replace(" ", "")
+load_dotenv()
 
-print(docs[0].page_content)  # 输出：helloworld ✅
+client = TavilyClient(os.getenv("TAVILY_API_KEY"))
+response = client.search(
+    query="病虫防害怎么治",
+    search_depth="advanced",
+    include_answer="advanced"
+)
+print(response['answer'])
