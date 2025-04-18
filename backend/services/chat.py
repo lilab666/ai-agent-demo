@@ -2,6 +2,8 @@ import json
 import os
 from dotenv import load_dotenv
 from fastapi.responses import StreamingResponse
+from tavily import TavilyClient
+
 from .knowledge_base import knowledge_base
 from openai import OpenAI
 from pydantic import BaseModel
@@ -12,6 +14,7 @@ load_dotenv()
 
 # 初始化 DeepSeek 客户端
 deepseek_client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
+tavily_client = TavilyClient(os.getenv("TAVILY_API_KEY"))
 
 # 添加系统提示
 messages = [{"role": "system", "content": "你是一个严谨的智能助手，回答需基于提供的信息和历史消息"}]
@@ -21,6 +24,17 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
     full_response = ""
     docs = []
     metadata = []
+
+    # 联网搜索调用 Tavily
+    response = tavily_client.search(
+        query=request.prompt,
+        search_depth="advanced",
+        max_results=10,
+        include_answer="advanced"
+    )
+
+    # 提取搜索摘要
+    search_answer = response.get("answer", "")
 
     try:
         # 知识库模式预处理
@@ -41,12 +55,21 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
             # 获取匹配的文档和元数据
             docs = results['documents']  # 提取匹配的文档
             metadata = results['metadatas'][0]  # 提取文档的元数据
-            context = "\n\n".join(
+            # 原始知识库内容构造
+            context_kb = "\n\n".join(
                 [f"【信息片段 {i + 1}】（来源：{meta['source']}）\n{doc}" for i, (doc, meta) in enumerate(zip(docs, metadata))]
             )
-            messages.append({"role": "user", "content": f"请根据以下知识库提供片段(不一定符合问题需求)和之前的对话(当前问题很可能跟之前的内容关联)回答问题：\n{context}\n\n问题：{request.prompt}"})
+
+            # 拼接最终上下文
+            context = f"【联网搜索摘要】\n{search_answer}\n\n【知识库内容】\n{context_kb}"
+
+            final_prompt = f"请根据以下知识库提供片段(不一定符合问题需求，信息片段权重大于网络搜索片段)和之前的对话(当前问题很可能跟之前的内容关联)回答问题：\n{context}\n\n问题：{request.prompt}"
+
+            messages.append({"role": "user", "content": final_prompt})
         else:
-            messages.append({"role": "user", "content": request.prompt})
+            final_prompt = f"【联网搜索摘要】(对问题不一定有用)\n{search_answer}\n\n问题：{request.prompt}"
+
+            messages.append({"role": "user", "content": final_prompt})
 
 
 
