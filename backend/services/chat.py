@@ -12,12 +12,26 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 # 加载环境变量
 load_dotenv()
 
-# 初始化 DeepSeek 客户端
-deepseek_client = OpenAI(api_key=os.getenv("DEEPSEEK_API_KEY"), base_url=os.getenv("DEEPSEEK_BASE_URL"))
+# 初始化通义千问客户端（OpenAI 接口格式）
+qwen_client = OpenAI(
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url=os.getenv("DASHSCOPE_BASE_URL"),
+)
 tavily_client = TavilyClient(os.getenv("TAVILY_API_KEY"))
 
 # 添加系统提示
 messages = [{"role": "system", "content": "你是一个严谨的智能助手，回答需基于提供的信息和历史消息"}]
+
+
+def trim_messages(messages, max_length=12):
+    # 如果超过最大长度，就删除最早的一对 user 和 assistant 消息（下标 1 和 2）
+    while len(messages) > max_length:
+        if len(messages) >= 3:
+            # 删除最早的 user 和 assistant（保留 system）
+            del messages[1:3]
+        else:
+            break
+
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(1))
 async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
@@ -57,7 +71,8 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
             metadata = results['metadatas'][0]  # 提取文档的元数据
             # 原始知识库内容构造
             context_kb = "\n\n".join(
-                [f"【信息片段 {i + 1}】（来源：{meta['source']}）\n{doc}" for i, (doc, meta) in enumerate(zip(docs, metadata))]
+                [f"【信息片段 {i + 1}】（来源：{meta['source']}）\n{doc}" for i, (doc, meta) in
+                 enumerate(zip(docs, metadata))]
             )
 
             # 拼接最终上下文
@@ -71,18 +86,24 @@ async def chat_handler(request):  # 使用 Pydantic 模型 ChatRequest
 
             messages.append({"role": "user", "content": final_prompt})
 
-
-
-        # 调用 DeepSeek 生成响应
-        response = deepseek_client.chat.completions.create(model="deepseek-chat", messages=messages, stream=True)
+        trim_messages(messages)
+        # 使用通义千问（DashScope）调用
+        response = qwen_client.chat.completions.create(
+            model="qwen-turbo-2025-04-28",
+            messages=messages,
+            stream=True,
+            # 如果你用的是 Qwen3 开源模型，可以取消下行注释
+            # extra_body={"enable_thinking": False}
+        )
 
         full_response = ""
 
         # 流式返回内容
         for chunk in response:
-            content = chunk.choices[0].delta.content or ""
-            full_response += content
-            yield json.dumps({"type": "content", "data": content}) + "\n"
+            if chunk.choices:
+                content = chunk.choices[0].delta.content or ""
+                full_response += content
+                yield json.dumps({"type": "content", "data": content}) + "\n"
 
         messages.append({"role": "assistant", "content": full_response})
 
