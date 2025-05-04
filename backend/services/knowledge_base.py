@@ -18,8 +18,8 @@ class KnowledgeBase:
         self.storage_path = storage_path
 
         self.embeddings = embeddings if embeddings else QwenEmbeddings(
-            api_key=os.getenv("QWEN_API_KEY"),
-            base_url=os.getenv("QWEN_BASE_URL")
+            api_key=os.getenv("DASHSCOPE_API_KEY"),
+            base_url=os.getenv("DASHSCOPE_BASE_URL")
         )
 
         # 创建 Chroma 客户端，支持持久化路径

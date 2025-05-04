@@ -16,8 +16,8 @@ router = APIRouter()
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(1))
 async def upload_endpoint(
         files: List[UploadFile] = File(...),
-        api_key: str = os.getenv("QWEN_API_KEY"),
-        base_url: str = os.getenv("QWEN_BASE_URL")
+        api_key: str = os.getenv("DASHSCOPE_API_KEY"),
+        base_url: str = os.getenv("DASHSCOPE_BASE_URL")
 ):
     try:
         # 处理文件并返回文档的元数据和嵌入信息
